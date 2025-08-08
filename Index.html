@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subscribe And Earn</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; background: #f0f0f0; padding: 40px; }
+    button { padding: 15px 30px; font-size: 20px; background-color: red; color: white; border: none; border-radius: 10px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>🎉 Subscribe and Earn ₹5</h1>
+  <p>Subscribe to our YouTube channel and get a reward!</p>
+  <button onclick="subscribe()">Subscribe Now</button>
+
+  <script>
+    function subscribe() {
+      window.open("https://youtube.com/@rvcooked", "_blank"); // Change to your channel
+      setTimeout(() => {
+        window.location.href = "form.html";
+      }, 3000); // 3 sec delay to return back
+    }
+  </script>
+</body>
+</html>
